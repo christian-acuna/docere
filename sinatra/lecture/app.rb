@@ -1,5 +1,6 @@
+# gems
 require 'sinatra'
 
-get '/' do
-  "hi friend"
-end
+# files
+require './controllers/index'
+require './models/coach'
