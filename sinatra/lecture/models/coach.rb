@@ -18,6 +18,10 @@ class Coach
     idx = @@list.index(old_name)
     @@list[idx] = new_name
   end
+
+  def self.delete(name)
+    @@list.delete(name)
+  end
 end
 
 

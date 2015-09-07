@@ -31,7 +31,10 @@ post '/coach/:name/update' do
   redirect "/coach/#{params[:new_name]}"
 end
 
-
+post '/coach/:name/delete' do
+  Coach.delete(params[:name])
+  redirect '/'
+end
 
 
 

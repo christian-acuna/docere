@@ -1,5 +1,12 @@
+<!-- update name -->
+<h3>Update Name</h3>
 <form method="POST" action="/coach/<%= @coach %>/update">
   <input type="text" placeholder="<%= @coach %>" name="new_name">
   <input type="hidden" value="<%= @coach %>" name="old_name">
   <input type="submit" value="Edit">
+</form>
+
+<h3>Delete this coach</h3>
+<form method="POST" action="/coach/<%= @coach %>/delete">
+  <input type="submit" value="GOODBYE, FOREVER!">
 </form>
