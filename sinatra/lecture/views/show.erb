@@ -1,0 +1,6 @@
+<a href="/coach/<%= @coach %>/edit">Edit coach name</a><br>
+<% if @coach.nil? %>
+  this is the page for nobody
+<% else %>
+  this is the page for <%= @coach %>
+<% end %>

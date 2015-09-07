@@ -1,0 +1,5 @@
+<form method="POST" action="/coach/<%= @coach %>/update">
+  <input type="text" placeholder="<%= @coach %>" name="new_name">
+  <input type="hidden" value="<%= @coach %>" name="old_name">
+  <input type="submit" value="Edit">
+</form>

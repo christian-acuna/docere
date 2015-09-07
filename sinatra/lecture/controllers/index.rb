@@ -17,9 +17,18 @@ post '/create' do
 end
 
 get '/coach/:name' do
-  ap params
   @coach = Coach.find_by_name(params[:name])
   erb :show
+end
+
+get '/coach/:name/edit' do
+  @coach = Coach.find_by_name(params[:name])
+  erb :edit
+end
+
+post '/coach/:name/update' do
+  Coach.replace(params[:old_name], params[:new_name])
+  redirect "/coach/#{params[:new_name]}"
 end
 
 

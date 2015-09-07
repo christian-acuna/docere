@@ -1,5 +1,5 @@
 class Coach
-  @@list = ["john", "patrick", "albert"]
+  @@list = ["juhn", "patrice", "bert"]
   def self.all
     @@list
   end
@@ -13,4 +13,13 @@ class Coach
       return name
     end
   end
+
+  def self.replace(old_name, new_name)
+    idx = @@list.index(old_name)
+    @@list[idx] = new_name
+  end
 end
+
+
+
+
