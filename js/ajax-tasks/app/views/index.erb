@@ -1,0 +1,16 @@
+<div class="add-task">
+  New Task!
+  <form id="task-form">
+    <input type="text" placeholder="task name" name="name" id="name-value">
+    <input type="submit" value="Add Task" id="submit-form">
+  </form>
+  <button id="hide-form">Hide Form</button>
+</div>
+
+<button id="show-form">Show Form</button>
+
+<ul class="task-list">
+  <% @tasks.each do |task| %>
+    <li><%= task.name %></li>
+  <% end %>
+</ul>

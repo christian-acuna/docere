@@ -1,0 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.add-task {
+  background: #4ECDC4;
+  display: none;
+}
